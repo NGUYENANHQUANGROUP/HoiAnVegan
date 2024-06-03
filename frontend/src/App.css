@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: rgba(0, 0, 0, 0.7); 
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.7);
+  height: 9rem;
+}
+
+.App-header2 {
+  background-color: rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 -10px 20px -5px rgba(0, 0, 0, 0.8), /* Bóng bên trên */
+  0 10px 20px -5px rgba(0, 0, 0, 0.8),  /* Bóng bên dưới */
+  10px 0 20px -5px rgba(0, 0, 0, 0.8);  /* Bóng bên phải */
+
+}
+
+.App-header #hoianlogo {
+  
+  height: 120px;
+}
+.App-header #hoianvegan {
+  
+  height: 60px;
+  width: 150px;
+}
+
+.bg-modal{
+  background: url('https://res.cloudinary.com/deukdbm09/image/upload/v1716867879/gibs93w9udy8g9ixx5ne.png') no-repeat center center fixed;
+  background-size: contain;
+ 
+}
+
+/***user table***/
+.userTable{
+  @apply bg-white
+}
+.userTable th{
+  @apply border text-base font-medium
+}
+
+.userTable td{
+  @apply border text-base text-center
+}
+
+.customText{
+  color: #efa765;
+  font-size: 12vh;
+  font-weight: bold;
+  font-family: 'Yeseva One',display;
+}
+.titleText{
+  color: #efa765;
+  font-size: 6vh;
+  font-weight: bold;
+  font-family: 'Yeseva One',display;
+}
+
+.bg-customcolor{
+  background-color: #efa765;
+}
+.map-responsive {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Tỷ lệ khung hình 16:9 */
+  height: 100%;
+  overflow: hidden;
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Hiển thị font-size 5 trên màn hình điện thoại */
+@media (max-width: 640px) { /* Thay đổi giá trị 640px nếu cần thiết */
+  .customText {
+      font-size: 4vw; /* Sử dụng vw thay vì vh để điều chỉnh kích thước dựa trên chiều rộng của màn hình */
+  }
+}
+
+/**scrollbar hidden****/
+.scrollbar-none::-webkit-scrollbar{
+  display: none;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
